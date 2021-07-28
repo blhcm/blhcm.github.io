@@ -1,0 +1,23 @@
+{% if site.gitalk_shortname %}
+
+<!-- Gitalk评论框 start -->
+<!-- Link Gitalk 的支持文件  -->
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+        <div id="gitalk-container"></div>
+        <script type="text/javascript">
+            var gitalk = new Gitalk({
+            // gitalk的主要参数
+                clientID: '189853f306ca07006a22',
+                clientSecret: '1c558b254444b5b0fb3b3444808fa4506abe93a2',
+                repo: 'gitment-bl',
+                owner: 'blhcm',
+                admin: ['blhcm'],
+                id:window.location.pathname,
+            });
+
+            gitalk.render('gitalk-container');
+        </script> 
+<!-- Gitalk end -->
+
+{% endif %}
