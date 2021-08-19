@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: 'blhcm的博客'
+title: '氦，别来无恙啊！'
 description: '这里是blhcm的博客，有许多有趣的东西要和你分享'
 keyword: 'blhcm, blhcm的博客'
 url: 'blhcm.github.io' # your host
@@ -26,7 +26,7 @@ footer:
 # Author 配置博主信息
 author: 'blhcm'
 nickname: ''
-bio: '性格开朗，爱玩爱创造'
+bio: '念念不忘，必有回响'
 avatar: '/assets/img/profile.png'
 
 # Search
