@@ -1,5 +1,5 @@
 <footer class="g-footer">
-  <section>{{ site.title }} ©
+  <section>blhcm ©
   {% assign current = "now" | date: "%Y" | plus: 0%}
   {% unless site.footer.since and site.footer.since == current %}
     {{ site.footer.since }}
@@ -7,17 +7,6 @@
   {% endunless %}
   {{ current }}
   </section>
-<script type="text/javascript" language="javascript">
-    function setTime() {
-        var create_time = Math.round(new Date(Date.UTC(2021, 07, 25, 0, 0, 0)).getTime() / 1000);
-        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
-        currentTime = secondToDate((timestamp - create_time));
-        currentTimeHtml = '本站已运行' + currentTime[0] + '年' + currentTime[1] + '天' + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4] + '秒';
-        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
-    }
-    setInterval(setTime, 1000);
-</script></span>
-<span id="htmer_time" style="color: black;"></span>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <span id="busuanzi_container_site_pv" style='display:none'>
     本站总访问量<span id="busuanzi_value_site_pv"></span>次
@@ -25,4 +14,39 @@
     本站访客数<span id="busuanzi_value_site_uv"></span>人次
 </span><span id="busuanzi_container_site_pv" style='display:none'>
     本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+function secondToDate(second) {
+if (!second) {
+return 0;
+}
+var time = new Array(0, 0, 0, 0, 0);
+if (second >= 365 * 24 * 3600) {
+time[0] = parseInt(second / (365 * 24 * 3600));
+second %= 365 * 24 * 3600;
+}
+if (second >= 24 * 3600) {
+time[1] = parseInt(second / (24 * 3600));
+second %= 24 * 3600;
+}
+if (second >= 3600) {
+time[2] = parseInt(second / 3600);
+second %= 3600;
+}
+if (second >= 60) {
+time[3] = parseInt(second / 60);
+second %= 60;
+}
+if (second > 0) {
+time[4] = second;
+}
+return time;
+}
+function setTime() {
+var create_time = Math.round(new Date(Date.UTC(2021, 08, 020, 11, 59, 59)).getTime() / 1000);
+var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+currentTime = secondToDate((timestamp - create_time));
+currentTimeHtml = '本站已艰难运行：' + currentTime[0] + '年' + currentTime[1] + '天'
++ currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
++ '秒';
+document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+}    setInterval(setTime, 1000);
 </footer>
