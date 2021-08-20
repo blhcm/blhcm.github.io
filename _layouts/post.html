@@ -88,7 +88,7 @@
         {% endif %}
      </div>
       {% endif %}
-
+{% include comments.html %}
       {% if page.previous.url %}
       <div class="read-next-item">
         <a href="{{ page.previous.url | relative_url }}" class="read-next-link"></a>
@@ -109,7 +109,6 @@
     </section>
     {% endif %}
   </section>
-{% include comments.html %}
   {% include footer.html %}
 
   <script src="{{ "/assets/js/social-share.min.js" | relative_url }}"></script>
