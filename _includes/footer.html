@@ -1,10 +1,5 @@
 <footer class="g-footer">
-  <section>blhcm ©
-  {% assign current = "now" | date: "%Y" | plus: 0%}
-  {% unless site.footer.since and site.footer.since == current %}
-    {{ site.footer.since }}
-    -
-  {% endunless %}
-  {{ current }}
-  </section>
+  <div class="contain">
+   <p style="color:gray;align:center">本站所有内容除特殊声明外，均使用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>发布</p>
+</div>
 </footer>
