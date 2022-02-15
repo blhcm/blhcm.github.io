@@ -1,8 +1,8 @@
 # Site settings 配置站点
-title: 'blhcm的小窝'
+title: 'blhcm的博客'
 description: '这里是blhcm的博客，有许多有趣的东西要和你分享'
 keyword: 'blhcm, blhcm的博客'
-url: 'blhcm.github.io' # your host
+url: 'blhcm.top' # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
 # 在服务器上建站时，如果你不需要子域名，请将这一格留空
@@ -16,16 +16,17 @@ baseurl: ''
 
 # Navigation links
 nav:
-  home: '/'
-  tags: '/tags.html'
+  主页: '/'
+  标签: '/tags.html'
+  关于: '/about.html'
 
 # Footer
 footer:
   since: 2021
 
 # Author 配置博主信息
-author: 'blhcm'
-nickname: ''
+author: 'Blhcm'
+nickname: '菠萝好聪明'
 bio: '念念不忘，必有回响'
 avatar: '/assets/img/profile.png'
 
@@ -34,11 +35,6 @@ search: true
 
 # Night mode
 nightMode: false
-
-# Comments 评论功能
-comments:
-  disqus: false
-  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
